@@ -180,8 +180,15 @@ Visual representation of:
 ```
 .
 ├── scheduler.py          # Main simulation program
-├── input.txt            # Sample input file
-└── README.md            # This file
+├── ENCS3390_project_documentation.pdf
+├── input/                        
+│   ├── input/
+│   └── input_testcase2.txt
+├── result/
+│   ├── testcase1_output.txt
+│   ├── testcase2_output.txt
+│   └─ screenshots/    
+└── README.md           
 ```
 
 ## Key Functions
