@@ -1,0 +1,70 @@
+Time 0: Process 0 added to ready queue (arrival).
+Time 0: Process 1 added to ready queue (arrival).
+Time 0: Process 2 added to ready queue (arrival).
+Time 0: Executing Process 0 with priority 0
+Time 0: Process 0 requesting resource 1.
+Resource 1 allocated to Process 0 successfully.
+Time 5: Executing Process 1 with priority 0
+Time 5: Process 1 requesting resource 2.
+Resource 2 allocated to Process 1 successfully.
+Time 10: Executing Process 2 with priority 0
+Time 10: Process 2 requesting resource 3.
+Resource 3 allocated to Process 2 successfully.
+Time 15: Executing Process 0 with priority 0
+Time 20: Executing Process 1 with priority 0
+Time 21: Executing Process 2 with priority 0
+Time 22: Executing Process 0 with priority 0
+Time 27: Executing Process 1 with priority 0
+Time 27: Process 1 requesting resource 3.
+Resource 3 not available. Moving Process 1 to waiting queue.
+Time 27: Executing Process 2 with priority 0
+Time 27: Process 2 requesting resource 1.
+Resource 1 not available. Moving Process 2 to waiting queue.
+Time 27: Executing Process 0 with priority 0
+Time 32: Executing Process 0 with priority 0
+Time 32: Process 0 requesting resource 2.
+Resource 2 not available. Moving Process 0 to waiting queue.
+Deadlock processes:  [0, 1, 2]
+Time: 32 Deadlock detected! Terminating process 0 for recovery.
+Terminated process 0 removed from the waiting queue for recovery.
+Terminated process 0 re-entered the ready queue.
+Resources now available for Process 2. Moving to ready queue.
+Time 32: Executing Process 2 with priority 0
+Time 32: Process 2 requesting resource 1.
+Time 35: Process 2 releasing resource 1.
+Time 35: Process 2 releasing resource 3.
+Resources now available for Process 1. Moving to ready queue.
+Time 35: Executing Process 0 with priority 0
+Time 35: Process 0 requesting resource 1.
+Resource 1 allocated to Process 0 successfully.
+Time 40: Executing Process 1 with priority 0
+Time 40: Process 1 requesting resource 3.
+Time 43: Process 1 releasing resource 2.
+Time 43: Process 1 releasing resource 3.
+Time 43: Executing Process 0 with priority 0
+Time 58: Executing Process 0 with priority 0
+Time 58: Process 0 requesting resource 2.
+Resource 2 allocated to Process 0 successfully.
+Time 62: Process 0 releasing resource 1.
+Time 62: Process 0 releasing resource 2.
+Simulation complete. All processes executed by time 62.
+
+Gantt Chart:
+Process 0 executed from 0 to 5
+Process 1 executed from 5 to 10
+Process 2 executed from 10 to 15
+Process 0 executed from 15 to 20
+Process 1 executed from 20 to 21
+Process 2 executed from 21 to 22
+Process 0 executed from 22 to 27
+Process 0 executed from 27 to 32
+Process 2 executed from 32 to 35
+Process 0 executed from 35 to 40
+Process 1 executed from 40 to 43
+Process 0 executed from 43 to 58
+Process 0 executed from 58 to 62
+
+Average Waiting Time: 29.67
+Average Turnaround Time: 41.67
+
+Process finished with exit code 0

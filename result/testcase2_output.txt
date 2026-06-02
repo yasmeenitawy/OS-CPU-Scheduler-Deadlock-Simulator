@@ -1,0 +1,37 @@
+Time 0: Process 0 added to ready queue (arrival).
+Time 0: Executing Process 0 with priority 0
+Time 10: Process 1 added to ready queue (arrival).
+Time 11: Process 2 added to ready queue (arrival).
+Time 15: Process 3 added to ready queue (arrival).
+Time 20: Process 0 enters I/O, finish time set to 50.
+Time 20: Process 0 has an I/O burst remaining and is waiting in I/O queue.
+Time 20: Executing Process 3 with priority 1
+Time 25: Process 3 enters I/O, finish time set to 50.
+Time 25: Process 3 has an I/O burst remaining and is waiting in I/O queue.
+Time 25: Executing Process 1 with priority 2
+Time 30: Executing Process 2 with priority 2
+Time 35: Process 2 completed its execution and is finished.
+Time 35: Executing Process 1 with priority 2
+Time 40: Process 1 completed its execution and is finished.
+Time 50: Process 0 completed I/O and re-entered the ready queue.
+Time 50: Process 3 completed I/O and re-entered the ready queue.
+Time 50: Executing Process 0 with priority 0
+Time 60: Process 0 completed its execution and is finished.
+Time 60: Executing Process 3 with priority 1
+Time 65: Process 3 completed its execution and is finished.
+Simulation complete. All processes executed by time 65.
+
+Gantt Chart:
+Process 0 executed from 0 to 20
+Process 3 executed from 20 to 25
+Process 1 executed from 25 to 30
+Process 2 executed from 30 to 35
+Process 1 executed from 35 to 40
+CPU idle from time 40 to 50
+Process 0 executed from 50 to 60
+Process 3 executed from 60 to 65
+
+Average Waiting Time: 13.50
+Average Turnaround Time: 31.25
+
+Process finished with exit code 0
